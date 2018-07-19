@@ -1,0 +1,12 @@
+*.pyc
+*.swp
+build/
+dist/
+.devlocaltmp/
+.tox/
+.coverage
+.idea
+.cache
+__pycache__
+*.log
+venv/
