@@ -18,6 +18,8 @@ class User(db.Model):
     __tablename__ = 'user'
     u_email = db.Column(db.String(64), primary_key=True, unique=True, comment="邮箱就是id，不可更换")
     u_name = db.Column(db.String(32), comment="昵称，不可更改")
+    u_qq = db.Column(db.String(32), comment="QQ")
+    u_weixin = db.Column(db.String(32), comment="微信")
     u_create_time = db.Column(db.DateTime, default=datetime.now, comment="创建时间")
     u_family_id = db.Column(db.Integer, default=None, comment="所属的族群号")
     u_key_word_list = db.Column(db.String(128), comment="特征词")

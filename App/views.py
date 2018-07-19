@@ -3,9 +3,8 @@
 # @Time    : 2018/7/18 0018 17:17
 # @author  : zza
 # @Email   : 740713651@qq.com
-from flask import render_template, Blueprint
-
 # from App import db
+from flask import Blueprint, render_template
 
 user_blueprint = Blueprint('user', __name__)
 
